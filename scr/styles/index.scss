@@ -142,3 +142,23 @@ a {
 }
 
 
+
+
+
+//efects
+
+.header-tools__profile-element:hover .svg-profile{
+    fill: $-c-blue;
+}
+.header-tools__profile-element:hover .svg-liked{
+    fill: $-c-red;
+}
+.header-tools__profile-element:hover .svg-cart{
+    fill: $-c-yellow;
+}
+
+.header-navi__categories-element:hover {
+    border: 2px solid black;
+    border-radius: 10%;
+    border-color: black;
+}

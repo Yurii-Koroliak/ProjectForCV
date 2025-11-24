@@ -166,4 +166,21 @@ a {
   .header-body {
     flex-direction: column;
   }
+}
+.header-tools__profile-element:hover .svg-profile {
+  fill: #1E90FF;
+}
+
+.header-tools__profile-element:hover .svg-liked {
+  fill: #DC143C;
+}
+
+.header-tools__profile-element:hover .svg-cart {
+  fill: #FFD700;
+}
+
+.header-navi__categories-element:hover {
+  border: 2px solid black;
+  border-radius: 10%;
+  border-color: black;
 }/*# sourceMappingURL=index.css.map */
