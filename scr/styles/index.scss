@@ -1,0 +1,93 @@
+@import './import';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    background: no-repeat;
+    background-size: cover;
+}
+img, svg {
+    vertical-align: top;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: black;
+}
+
+.header {
+
+
+    &-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+    &-tools {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &-element {
+                padding: 3px;
+                cursor: pointer;
+                margin-right: 5px;
+                &:last-child {
+                    margin: 0px;
+                }
+            }
+        }
+        &__search {
+            margin-right: 20px;
+        }
+    }
+
+    &-navi {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+
+        &__logo {
+            margin-right: 30px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        &__categories {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &-element {
+                margin-right: 10px;
+                cursor: pointer;
+                padding: 5px;
+                &:last-child {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
