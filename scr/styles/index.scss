@@ -153,6 +153,7 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-bottom: 50px;
 
         &__arrow {
             position: relative;
@@ -174,7 +175,7 @@ a {
         padding: 15px;
         border-radius: 6px;
         position: absolute;
-        bottom: 10px;
+        bottom: 60px;
         width: 45%;
 
         &-text {
@@ -206,7 +207,60 @@ a {
         justify-content: center;
         position: relative;
     }
+
+    &-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+
+        &__item {
+            border: 2px solid $-c-lightgray;
+            border-radius: 6px;
+            padding: 15px;
+
+
+            &__photo {
+                
+            }
+
+            &__description {
+                margin-bottom: 10px;
+            }
+
+            &__cost {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between ;
+                align-items: center;
+            }
+
+            &__button {
+                padding: 5px;
+                cursor: pointer;
+                border: 2px solid $-c-blue;
+                background-color: $-c-white;
+                color: $-c-blue;
+                border-radius: 6px;
+            }
+
+            &__price {
+                color: $-c-gray;
+            }
+        }
+    }
 }
+
+
+@media (max-width: $breakpoint-sm) {
+    .main-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
 
 .arrow {
     fill: $-c-gray;
@@ -244,4 +298,10 @@ a {
     &,main-news-text {
         color: $-c-black;
     }
+}
+
+.main-products__item__button:hover {
+    background-color: $-c-blue;
+    border-color: $-c-white;
+    color: $-c-white;
 }
