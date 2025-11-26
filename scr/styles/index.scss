@@ -26,7 +26,23 @@ a {
 .header {
     border-bottom: 1px solid $-c-gray;
     margin-bottom: 20px;
+    &-search {
+        border: 2px solid $-c-lightgray;
+        border-right: none;
+        border-radius: 6px 0px 0px 6px;
+        padding: 5px;
+        &-button {
+            background-color: $-c-lightgray;
+            padding: 5px;
+            border: 2px solid $-c-lightgray;
+            border-radius: 0px 6px 6px 0px;
+            cursor: pointer;
+            color: $-c-white;
+        }
+        &-svg {
 
+        }
+    }
     &-body {
         display: flex;
         align-items: center;
@@ -57,6 +73,10 @@ a {
         }
         &__search {
             margin-right: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -147,7 +167,7 @@ a {
 
 .main {
 
-
+    margin-bottom: 70px;
     &-slider {
         display: flex;
         flex-direction: row;
@@ -176,7 +196,9 @@ a {
         border-radius: 6px;
         position: absolute;
         bottom: 60px;
-        width: 45%;
+        // width: 45%;
+        width: 100%;
+        max-width: 440px;
 
         &-text {
             color: $-c-white;
@@ -267,6 +289,94 @@ a {
 }
 
 
+.footer {
+    margin-bottom: 70px;
+    &-header {
+        border-bottom: 2px solid $-c-lightgray;
+        border-top: 2px solid $-c-lightgray;
+        margin-bottom: 30px;
+
+
+        &__benefits {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin: 15px 0px;
+        }
+    }
+
+    &-main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 2px solid $-c-lightgray;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            & > * {
+                padding-bottom: 5px;
+                &:last-child {
+                    padding-bottom: 0px;
+                }
+            }
+
+            &-button {
+                background-color: $-c-lightBlue;
+                padding: 5px;
+                border: 2px solid $-c-lightBlue;
+                border-radius: 0px 6px 6px 0px;
+                cursor: pointer;
+                color: $-c-white;
+            }
+
+            &-input {
+                border: 2px solid $-c-lightgray;
+                border-right: none;
+                border-radius: 6px 0px 0px 6px;
+                padding: 5px;
+            }
+            &-email {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            &-link {
+                color: $-c-black;
+            }
+        }
+    }
+
+    &-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &-socials {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        
+        & > * {
+            margin-right: 20px;            
+            &:last-child {
+                margin-right: 0px;  
+            }
+        }
+    }
+}
+
 
 //efects
 
@@ -281,7 +391,7 @@ a {
 }
 
 .header-navi__categories-element:hover {
-    border: 2px solid $-c-black;
+    border-bottom: 2px solid $-c-black;
     border-radius: 12px;
     border-color: $-c-black;
 }
@@ -304,4 +414,31 @@ a {
     background-color: $-c-blue;
     border-color: $-c-white;
     color: $-c-white;
+}
+
+.instagram:hover {
+    fill: $-c-red;
+}
+.twitter:hover {
+    fill: $-c-blue;
+}
+.facebook:hover {
+    fill: $-c-lightBlue;
+}
+
+.footer-main-item-button:hover {
+    background-color: $-c-white;
+    color: $-c-black;
+}
+
+.header-search-button:hover {
+    background-color: $-c-blue;
+    border-color: $-c-blue;
+    & .header-search-svg {
+        fill: $-c-white;
+    }
+}
+
+.footer-main-item-link:hover {
+    color: $-c-lightBlue;
 }

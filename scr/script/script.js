@@ -8,6 +8,7 @@ burger.addEventListener('click', () => {
 
 
 
+
 function plusSlides(n) {
 
     slideIndex += n;
