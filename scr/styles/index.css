@@ -164,6 +164,7 @@ a {
   background: #FFFFFF;
   padding: 20px;
   border-top: 1px solid #FFFFFF;
+  z-index: 1;
 }
 .phone-menu ul {
   list-style: none;
@@ -283,6 +284,9 @@ a {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
   }
+  .main-news {
+    width: auto;
+  }
 }
 .arrow {
   fill: #808080;
@@ -366,6 +370,48 @@ a {
   margin-right: 0px;
 }
 
+.dropdown {
+  position: relative;
+  z-index: 1;
+}
+.dropdown__button {
+  border: none;
+  cursor: pointer;
+}
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  width: 180px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  padding: 8px 0;
+}
+.dropdown__menu a {
+  padding: 10px 16px;
+  color: #000000;
+}
+.dropdown.active .dropdown__menu {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .footer-main-item {
+    cursor: pointer;
+  }
+  .footer-main-item-span {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .footer-main {
+    flex-direction: column;
+  }
+}
 .header-tools__profile-element:hover .svg-profile {
   fill: #1E90FF;
 }
@@ -428,5 +474,13 @@ a {
 }
 
 .footer-main-item-link:hover {
+  color: #1E90FF;
+}
+
+.dropdown__menu a:hover {
+  background: #DCDCDC;
+}
+
+.footer-main-item-dropdown:hover {
   color: #1E90FF;
 }/*# sourceMappingURL=index.css.map */

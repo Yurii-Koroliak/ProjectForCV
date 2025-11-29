@@ -139,24 +139,34 @@
                                 <h1>Fuzzy</h1>
                             </a>
                         </div>
-                        <ul class="header-navi__categories desktop-menu">
-        
-                            <li class="header-navi__categories-element">
-                                Neuheiten
-                            </li>
-        
-                            <li class="header-navi__categories-element">
-                                Damen
-                            </li>
-        
-                            <li class="header-navi__categories-element">
-                                Herren
-                            </li>
-        
-                            <li class="header-navi__categories-element">
-                                Kategorien
-                            </li>
-                        </ul>
+                        <nav>
+                            <ul class="header-navi__categories desktop-menu">
+            
+                                <li class="header-navi__categories-element">
+                                    Neuheiten
+                                </li>
+            
+                                <li class="header-navi__categories-element">
+                                    Damen
+                                </li>
+            
+                                <li class="header-navi__categories-element">
+                                    Herren
+                                </li>
+            
+                                <li class="header-navi__categories-element">
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">Kategorien ▾</button>
+    
+                                        <div class="dropdown__menu">
+                                            <a href="#">Trends</a>
+                                            <a href="#">Frühlings-Mode</a>
+                                            <a href="#">Hochzeiten</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
                         <div class="burger" id="burger">
                             <span></span>
                             <span></span>
@@ -164,11 +174,21 @@
                         </div>
                         
                         <nav class="phone-menu" id="phone-menu">
-                            <ul>
-                                <li>Neuheiten</li>
-                                <li>Damen</li>
-                                <li>Herren</li>
-                                <li>Kategorien</li>
+                            <ul class="header-navi__categories">
+                                <li class="header-navi__categories-element">Neuheiten</li>
+                                <li class="header-navi__categories-element">Damen</li>
+                                <li class="header-navi__categories-element">Herren</li>
+                                <li class="header-navi__categories-element">
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">Kategorien ▾</button>
+
+                                        <div class="dropdown__menu">
+                                            <a href="#">Trends</a>
+                                            <a href="#">Frühlings-Mode</a>
+                                            <a href="#">Hochzeiten</a>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </nav>
                         
@@ -212,17 +232,6 @@
                         </ul>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </div>
 
@@ -420,33 +429,33 @@
 
                 <div class="footer-main">
                     <div class="footer-main-item">
-                        <h4>Kundenservice</h4>
-                        <span><a href="" class="footer-main-item-link">Service & Hilfe</a></span>
-                        <span><a href="" class="footer-main-item-link">Kontaktformular</a></span>
-                        <span><a href="" class="footer-main-item-link">Feedback</a></span>
-                        <span><a href="" class="footer-main-item-link">Storefinder</a></span>
+                        <h4 class="footer-main-item-dropdown">Kundenservice</h4>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Service & Hilfe</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Kontaktformular</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Feedback</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Storefinder</a></span>
                     </div>
 
                     <div class="footer-main-item">
-                        <h4>Einfach Shoppen</h4>
-                        <span><a href="" class="footer-main-item-link">Größentabelle</a></span>
-                        <span><a href="" class="footer-main-item-link">Pflegetipps</a></span>
-                        <span><a href="" class="footer-main-item-link">Materialinformationen</a></span>
-                        <span><a href="" class="footer-main-item-link">Verfügbarkeit</a></span>
+                        <h4 class="footer-main-item-dropdown">Einfach Shoppen</h4>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Größentabelle</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Pflegetipps</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Materialinformationen</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Verfügbarkeit</a></span>
                     </div>
 
                     <div class="footer-main-item">
-                        <h4>Fuzzy</h4>
-                        <span><a href="" class="footer-main-item-link">Presse</a></span>
-                        <span><a href="" class="footer-main-item-link">Job & Karriere</a></span>
-                        <span><a href="" class="footer-main-item-link">Impressum</a></span>
-                        <span><a href="" class="footer-main-item-link">Datenschutz</a></span>
+                        <h4 class="footer-main-item-dropdown">Fuzzy</h4>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Presse</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Job & Karriere</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Impressum</a></span>
+                        <span class="footer-main-item-span"><a href="" class="footer-main-item-link">Datenschutz</a></span>
                     </div>
 
-                    <div class="footer-main-item">
+                    <div>
                         <h4>Newsletter bestellen</h4>
-                        <span class="">Monatliche Angebote und Rabatte für Sie!</span>
-                        <div class="footer-main-item-email">
+                        <span class="footer-main-item-span" class="">Monatliche Angebote und Rabatte für Sie!</span>
+                        <div  class="footer-main-item-email">
                             <input type="text" class="footer-main-item-input" placeholder="E-mail">
                             <button class="footer-main-item-button">Anmelden</button>
                         </div>
@@ -458,20 +467,26 @@
                         <span>© 2023 Fuzzy Clothes GmbH</span>
                     </div>
                     <div class="footer-socials">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" class="instagram">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" class="twitter">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </div>
                         <div>   
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" class="facebook">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
+                            <a href="https://www.instagram.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" class="instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://x.com/home">                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" class="twitter">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div> 
+                            <a href="https://www.facebook.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" class="facebook">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>  
                         </div>
                     </div>
                 </div>

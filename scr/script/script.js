@@ -8,6 +8,19 @@ burger.addEventListener('click', () => {
 
 
 
+document.querySelector('.dropdown__button').addEventListener('click', function() {
+  this.parentElement.classList.toggle('active');
+});
+
+document.querySelectorAll('.footer-main-item').forEach(item => {
+  const dropdown = item.querySelector('.footer-main-item-dropdown');
+  const span = item.querySelectorAll('.footer-main-item-span');
+
+  dropdown.addEventListener('click', () => {
+    span.forEach(span => span.classList.toggle('active'));
+  });
+});
+
 
 function plusSlides(n) {
 
@@ -26,7 +39,6 @@ function plusSlides(n) {
       slides[i].style.display = "none";
     }
 
-  // Показываем текущий
     slides[slideIndex - 1].style.display = "flex";
 }
 
@@ -34,29 +46,25 @@ function plusSlides(n) {
 
 
 function slideShow(){
-    let slides = document.getElementsByClassName('mySlide');
+  let slides = document.getElementsByClassName('mySlide');
 
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
 
-    slideIndex++;
-    //тут мы просто к переменной slideIndex прибавляем 1 (если было 0 то стало 1 и тд)
+  slideIndex++;
 
-    setTimeout(slideShow, 5000);
-
-
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }  
-    //тут мы сказали что если slideIndex становится больше длины масива мы возвращаем его к значению 1
+  setTimeout(slideShow, 5000);
 
 
-    slides[slideIndex - 1].style.display = "flex";
-    //показываем один слайд из массива (даем ему display flex)
-    //slideIndex - 1 потому что индексация в масиве начинается с 0 и если у нас slideIndex равняется 1 то надо отнять 1 что бы показать именно первый обэкт в масиве
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }  
+
+
+  slides[slideIndex - 1].style.display = "flex";
 
 }
 

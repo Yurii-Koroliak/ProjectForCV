@@ -134,6 +134,7 @@ a {
     background: $-c-white;
     padding: 20px;
     border-top: 1px solid $-c-white;
+    z-index: 1;
     & ul {
         list-style: none;
         padding: 0;
@@ -281,6 +282,9 @@ a {
         grid-template-rows: repeat(3, 1fr);
         gap: 10px;
     }
+    .main-news {
+        width: auto;
+    }
 }
 
 
@@ -378,6 +382,55 @@ a {
 }
 
 
+.dropdown {
+  position: relative;
+  z-index: 1;
+
+  &__button {
+    border: none;
+    cursor: pointer;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    width: 180px;
+    background: $-c-white;
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    padding: 8px 0;
+
+    a {
+      padding: 10px 16px;
+      color: $-c-black;
+    }
+  }
+
+  &.active .dropdown__menu {
+    display: flex;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+    .footer-main-item {
+        cursor: pointer;
+    }
+    .footer-main-item-span {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+}
+
+@media (max-width: $breakpoint-sm) {
+    .footer-main {
+        flex-direction: column;
+    }
+    
+}
+
 //efects
 
 .header-tools__profile-element:hover .svg-profile{
@@ -441,4 +494,14 @@ a {
 
 .footer-main-item-link:hover {
     color: $-c-lightBlue;
+}
+
+
+.dropdown__menu a:hover {
+    background: $-c-lightgray;
+}
+
+
+.footer-main-item-dropdown:hover {
+    color: $-c-blue;
 }
