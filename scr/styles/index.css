@@ -36,6 +36,13 @@
   }
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "amarente";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/amarante-v30-latin-regular.woff2") format("woff2");
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -56,6 +63,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+h1, li, span, h3, h4 {
+  font-family: "amarente";
 }
 
 .logo {
@@ -263,6 +274,30 @@ a {
 .main-products__item__price {
   color: #808080;
 }
+.main-products > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.main-products > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.main-products > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.main-products > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.main-products > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.main-products > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
 
 .arrow {
   fill: #808080;
@@ -394,6 +429,30 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+  }
+  .main-products > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .main-products > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .main-products > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .main-products > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .main-products > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .main-products > *:nth-child(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
   }
   .main-news {
     width: auto;
