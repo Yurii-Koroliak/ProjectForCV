@@ -177,19 +177,6 @@ a {
   border-bottom: 1px solid #FFFFFF;
 }
 
-@media (max-width: 992px) {
-  .desktop-menu {
-    display: none;
-  }
-  .burger {
-    display: flex;
-  }
-}
-@media (max-width: 640px) {
-  .header-body {
-    flex-direction: column;
-  }
-}
 .main {
   margin-bottom: 70px;
 }
@@ -277,17 +264,6 @@ a {
   color: #808080;
 }
 
-@media (max-width: 640px) {
-  .main-products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-  }
-  .main-news {
-    width: auto;
-  }
-}
 .arrow {
   fill: #808080;
 }
@@ -412,22 +388,50 @@ a {
     flex-direction: column;
   }
 }
+@media (max-width: 640px) {
+  .main-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .main-news {
+    width: auto;
+  }
+}
+@media (max-width: 992px) {
+  .desktop-menu {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
+@media (max-width: 640px) {
+  .header-body {
+    flex-direction: column;
+  }
+}
 .header-tools__profile-element:hover .svg-profile {
   fill: #1E90FF;
 }
-
 .header-tools__profile-element:hover .svg-liked {
   fill: #DC143C;
 }
-
 .header-tools__profile-element:hover .svg-cart {
   fill: #FFD700;
 }
-
 .header-navi__categories-element:hover {
   border-bottom: 2px solid #000000;
   border-radius: 12px;
   border-color: #000000;
+}
+.header-search-button:hover {
+  background-color: #1E90FF;
+  border-color: #1E90FF;
+}
+.header-search-button:hover .header-search-svg {
+  fill: #FFFFFF;
 }
 
 .arrow:hover {
@@ -441,11 +445,21 @@ a {
 .main-news-button:hover, .main-news-button:hover main-news-text {
   color: #000000;
 }
-
 .main-products__item__button:hover {
   background-color: #1E90FF;
   border-color: #FFFFFF;
   color: #FFFFFF;
+}
+
+.footer-main-item-link:hover {
+  color: #1E90FF;
+}
+.footer-main-item-button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.footer-main-item-dropdown:hover {
+  color: #1E90FF;
 }
 
 .instagram:hover {
@@ -460,27 +474,6 @@ a {
   fill: #1E90FF;
 }
 
-.footer-main-item-button:hover {
-  background-color: #FFFFFF;
-  color: #000000;
-}
-
-.header-search-button:hover {
-  background-color: #1E90FF;
-  border-color: #1E90FF;
-}
-.header-search-button:hover .header-search-svg {
-  fill: #FFFFFF;
-}
-
-.footer-main-item-link:hover {
-  color: #1E90FF;
-}
-
 .dropdown__menu a:hover {
   background: #DCDCDC;
-}
-
-.footer-main-item-dropdown:hover {
-  color: #1E90FF;
 }/*# sourceMappingURL=index.css.map */

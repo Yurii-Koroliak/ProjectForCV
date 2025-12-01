@@ -147,21 +147,7 @@ a {
         border-bottom: 1px solid $-c-white;
     }
 }
-@media (max-width: $breakpoint-lg) {
-    .desktop-menu {
-        display: none;
-    }
 
-    .burger {
-        display: flex;
-    }
-}
-
-@media (max-width: $breakpoint-sm) {
-    .header-body {
-        flex-direction: column;
-    }
-}
 
 
 
@@ -197,7 +183,6 @@ a {
         border-radius: 6px;
         position: absolute;
         bottom: 60px;
-        // width: 45%;
         width: 100%;
         max-width: 440px;
 
@@ -275,17 +260,7 @@ a {
 }
 
 
-@media (max-width: $breakpoint-sm) {
-    .main-products {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
-    }
-    .main-news {
-        width: auto;
-    }
-}
+
 
 
 .arrow {
@@ -431,42 +406,95 @@ a {
     
 }
 
+@media (max-width: $breakpoint-sm) {
+    .main-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .main-news {
+        width: auto;
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media (max-width: $breakpoint-sm) {
+    .header-body {
+        flex-direction: column;
+    }
+}
+
 //efects
-
-.header-tools__profile-element:hover .svg-profile{
-    fill: $-c-blue;
-}
-.header-tools__profile-element:hover .svg-liked{
-    fill: $-c-red;
-}
-.header-tools__profile-element:hover .svg-cart{
-    fill: $-c-yellow;
-}
-
-.header-navi__categories-element:hover {
-    border-bottom: 2px solid $-c-black;
-    border-radius: 12px;
-    border-color: $-c-black;
+.header {
+    &-tools__profile-element:hover {
+        & .svg-profile {
+            fill: $-c-blue;
+        }
+        & .svg-liked {
+            fill: $-c-red;
+        }
+        & .svg-cart {
+            fill: $-c-yellow;
+        }
+    }
+    &-navi__categories-element:hover {
+        border-bottom: 2px solid $-c-black;
+        border-radius: 12px;
+        border-color: $-c-black;
+    }
+    &-search-button:hover {
+        background-color: $-c-blue;
+        border-color: $-c-blue;
+        & .header-search-svg {
+            fill: $-c-white;
+        }
+    }
 }
 
 .arrow:hover {
     fill: $-c-blue;
-
 }
 
-.main-news-button:hover {
-    border-color: $-c-black;
-    background-color:$-c-white;
+.main {
+    &-news-button:hover {
+        border-color: $-c-black;
+        background-color:$-c-white;
 
-    &,main-news-text {
-        color: $-c-black;
+        &,main-news-text {
+            color: $-c-black;
+        }
+    }
+    &-products__item__button:hover {
+        background-color: $-c-blue;
+        border-color: $-c-white;
+        color: $-c-white;
     }
 }
 
-.main-products__item__button:hover {
-    background-color: $-c-blue;
-    border-color: $-c-white;
-    color: $-c-white;
+
+.footer {
+    &-main-item {
+        &-link:hover {
+            color: $-c-lightBlue;
+        }
+        &-button:hover {
+            background-color: $-c-white;
+            color: $-c-black;
+        }
+        &-dropdown:hover {
+            color: $-c-blue;
+        }
+    }
 }
 
 .instagram:hover {
@@ -479,29 +507,8 @@ a {
     fill: $-c-lightBlue;
 }
 
-.footer-main-item-button:hover {
-    background-color: $-c-white;
-    color: $-c-black;
-}
-
-.header-search-button:hover {
-    background-color: $-c-blue;
-    border-color: $-c-blue;
-    & .header-search-svg {
-        fill: $-c-white;
-    }
-}
-
-.footer-main-item-link:hover {
-    color: $-c-lightBlue;
-}
-
-
 .dropdown__menu a:hover {
     background: $-c-lightgray;
 }
 
 
-.footer-main-item-dropdown:hover {
-    color: $-c-blue;
-}
